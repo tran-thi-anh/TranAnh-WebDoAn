@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike2</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header text-dark py-3">
+        <header class="header bg-primary-subtle text-dark py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="trangchu.html" class="d-flex align-items-center text-decoration-none">
+                    <img src="imgs/logo.jpg" alt="Logo 3T Shoes" height="100" width="100" class="me-2 rounded-circle" title="Logo">
+                </a>
+
+                <!-- Thanh tìm kiếm -->
+                <div class="d-flex flex-grow-1 mx-4">
+                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                    <button class="btn btn-light ms-2"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Các biểu tượng -->
+                <div class="d-flex align-items-center">
+                    <a href="taikhoancuatoi.html" class="text-white mx-2" title="Tài khoản"><i class="fas fa-user fa-lg"></i></a>
+                    <a href="tranggiohang.html" class="text-white mx-2" title="Giỏ hàng"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                    <a href="blog.html" class="text-white mx-2" title="Blog"><i class="fas fa-blog fa-lg"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="category-bar text-dark py-1">
+            <div class="container">
+                <ul class="category-list d-flex justify-content-center mb-2 mt-2">
+                    <li class="px-3"><a href="trangchu.html" class="text-decoration-none">Trang chủ</a></li>
+                    <li class="px-3"><a href="nike.html" class="text-decoration-none">Giày Nike</a></li>
+                    <li class="px-3"><a href="sandal.html" class="text-decoration-none">Dép Sandal</a></li>
+                    <li class="px-3"><a href="taobao.html" class="text-decoration-none">Giày Taobao</a></li>
+                    <li class="px-3"><a href="lienhe.html" class="text-decoration-none">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img id="main-image" src="imgs/nike2.jpg" alt="Sản phẩm" class="img-fluid">
+                    <div class="d-flex mt-3">
+                        <a href="imgs/nike2.1.jpg">
+                            <img src="imgs/nike2.1.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                        <a href="imgs/nike2.2.jpg">
+                            <img src="imgs/nike2.2.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                        <a href="imgs/nike2.3.jpg">
+                            <img src="imgs/nike2.3.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Giày Cổ Cao Nam Nữ, Giày SneakerJD FULL MÀU - UNISEX_Hàng Cao Cấp__XT - Sneacker</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="text-warning fs-5 me-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                        <span>(758 đánh giá)</span>
+                    </div>
+                    <p class="mt-3 fs-4 text-danger">350.000đ <span class="text-muted fs-6 text-decoration-line-through">786.000đ</span></p>
+                    <form action="thanhtoan.html" method="GET">
+                        <!-- Thông tin sản phẩm ẩn -->
+                        <input type="hidden" name="product_name" value="Giày Cổ Cao Nam Nữ, Giày SneakerJD FULL MÀU - UNISEX_Hàng Cao Cấp__XT - Sneacker">
+                        <input type="hidden" name="product_price" value="350000">
+                        <input type="hidden" name="product_image" value="imgs/nike2.jpg">
+                        <!-- Chọn màu sắc -->
+                        <p>Màu sắc:</p>
+                        <label>
+                        <input type="radio" name="color" value="Đen Trắng " required> Đen Trắng 
+                    </label>
+                        <label>
+                        <input type="radio" name="color" value="Đen Trắng " required> Đen Trắng + Box 
+                    </label>
+
+                        <!-- Chọn size -->
+                        <p class="mt-3">Size:</p>
+                        <label>
+                        <input type="radio" name="size" value="35" required> 35
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="36"> 36
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="37"> 37
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="38"> 38
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="39"> 39 
+                    </label>
+
+                        <!-- Nhập số lượng -->
+                        <div class="mt-3">
+                            <label for="quantity">Số lượng:</label>
+                            <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        </div>
+
+                        <!-- Nút Mua hàng và Thêm vào giỏ hàng -->
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary" formaction="tranggiohang.html">Thêm vào giỏ hàng</button>
+                            <button type="submit" class="btn btn-success me-2" formaction="thanhtoan.html">Mua hàng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h5>Chi tiết sản phẩm</h5>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th>Danh mục</th>
+                            <td>3T SHOES > Giày Nike</td>
+                        </tr>
+                        <tr>
+                            <th>Kho</th>
+                            <td>567</td>
+                        </tr>
+                        <tr>
+                            <th>Chất liệu</th>
+                            <td>Canvas, Cao su</td>
+                        </tr>
+                        <tr>
+                            <th>Xuất xứ</th>
+                            <td>Trung Quốc</td>
+                        </tr>
+                        <tr>
+                            <th>Kiểu giày</th>
+                            <td>Giày quai hậu</td>
+                        </tr>
+                        <tr>
+                            <th>Gửi từ</th>
+                            <td>Hà Nội</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5>🌟 Lưu Ý Khi Chọn Size 🌟</h5>
+                <h6>GIÀY THỂ THAO CỔ CAO</h6>
+            </div>
+            <h6>Giày High Màu Đen Trắng Cực Hot Bản Sịn</h6>
+            <p>Giày thể thao da mịn, dáng sneaker với đế cao 3-4 phân, mang phong cách thể thao năng động. Thiết kế nhẹ, êm chân và dáng cực kỳ sport.</p>
+            <ul>
+                <li>Shop cập nhật mẫu mới liên tục. Hãy bấm <strong>"Theo dõi"</strong> shop để trải nghiệm sản phẩm mới nhất.</li>
+                <li>Thiết kế chất da mịn, đường chỉ sắc nét.</li>
+                <li>Hỗ trợ đổi size nếu không vừa (vui lòng đọc kỹ bảng size để đỡ mất công đổi).</li>
+            </ul>
+
+            <h5>✔️ HƯỚNG DẪN CHỌN SIZE GIÀY</h55>
+                <ul>
+                    <li>22.5cm - 23cm → size 36</li>
+                    <li>23cm - 23.5cm → size 37</li>
+                    <li>23.5cm - 24cm → size 38</li>
+                    <li>24cm - 24.5cm → size 39</li>
+                    <li>24.5cm - 25cm → size 40</li>
+                    <li>25cm - 25.5cm → size 41</li>
+                </ul>
+
+                <h5>* Hướng Dẫn Sử Dụng</h5>
+                <ul>
+                    <li>Không giặt tẩy bằng các chất tẩy rửa mạnh. Có thể dùng vỏ chuối, sữa tươi, giấm để vệ sinh.</li>
+                    <li>Không ngâm nước quá lâu.</li>
+                    <li>Với các sản phẩm sáng màu, nên vệ sinh thường xuyên.</li>
+                    <li>Tránh cất giữ giày khi còn ướt hoặc ẩm.</li>
+                </ul>
+
+                <h5>* Bảo Hành Và CSKH</h5>
+                <ul>
+                    <li>Bảo hành trong 30 ngày kể từ khi nhận được sản phẩm.</li>
+                    <li>Nếu sản phẩm sai mẫu mã hoặc bị lỗi, quý khách sẽ được miễn phí hoàn toàn cước đổi trả sản phẩm khác.</li>
+                    <li>Quý khách được đổi với sản phẩm mới ngang hoặc cao giá hơn.</li>
+                    <li>Mỗi sản phẩm chỉ được đổi trả 1 lần duy nhất.</li>
+                </ul>
+
+                <p>Shop cảm ơn quý khách đã ghé thăm và ủng hộ. Vui lòng ấn <strong>"Theo dõi"</strong> để cập nhật những sản phẩm mới nhất!</p>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-primary-subtle py-4 mt-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-links mt-3">
+                        <h5>Về chúng tôi</h5>
+                        <ul>
+                            <li><a href="gioithieu.html" class="text-decoration-none">Giới thiệu</a></li>
+                            <li><a href="dieukhoan.html" class="text-decoration-none">Điều khoản sử dụng</a></li>
+                            <li><a href="lienhe.html" class="text-decoration-none">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-links mt-3">
+                        <h5>Khách hàng</h5>
+                        <ul>
+                            <li><a href="chinhsachbaomat.html" class="text-decoration-none">Chính sách bảo mật</a></li>
+                            <li><a href="chinhsachdoitra.html" class="text-decoration-none">Chính sách đổi trả</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-4 footer-links mt-3">
+                        <h5>Đăng ký để nhận ưu đãi từ 3T SHOES!</h5>
+                        <form class="d-flex justify-content-center">
+                            <input type="text" class="form-control w-60 me-2" placeholder="*Nhập số điện thoại của bạn">
+                            <button class="border border-none"><a href="taikhoancuatoi.html" class="btn btn-primary">Đăng ký</a></button>
+                        </form>
+                        <div class="mt-3">
+                            <p>Kết nối với chúng tôi:</p>
+                            <div class="footer-social">
+                                <a href="https://bom.so/iQgNYI"><img src="imgs/facebook.jpg" class="rounded-4" alt="Facebook" width="30"></a>
+                                <a href="https://bom.so/79wB7E"><img src="imgs/tiktok.jpg" class="rounded-4" alt="Instagram" width="30"></a>
+                                <a href="https://bom.so/uO1L9i"><img src="imgs/instagram.jpg" class="rounded-4" alt="TikTok" width="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+</body>
+
+</html>

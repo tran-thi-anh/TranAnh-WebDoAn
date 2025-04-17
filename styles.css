@@ -1,0 +1,233 @@
+/* Cấu hình chung */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Đảm bảo sử dụng font chính */
+    cursor: pointer;
+}
+/* blog*/
+.sodo {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.sodo img {
+    width: 600px;
+}
+/*chi tiết sản phẩm*/
+.product-thumbnail {
+    gap: 5px;
+    overflow-x: auto;
+}
+
+.thumbnail {
+    width: 80px; /* Kích thước ảnh thu nhỏ */
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+/* Thêm margin-right cho các ảnh nhỏ */
+#main-image-thumbnail {
+    margin-right: 1px; /* Tùy chỉnh khoảng cách */
+}
+
+.thumbnail.selected {
+    border-color: #007bff; /* Đổi màu viền khi chọn ảnh */
+}
+
+.thumbnail:hover {
+    border-color: #28a745; /* Đổi màu viền khi hover */
+}
+
+/* Header */
+#header {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .icons a {
+    font-size: 2rem;
+    color: #860e0e;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: var(--pink); /* Đảm bảo hover có màu thay đổi */
+}
+
+/* Thanh danh mục */
+.category-bar {
+    background-color: #99B7E6; /* Màu nền của thanh danh mục */
+}
+
+.category-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #030303;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.category-list a:hover {
+    background-color: #007bff;
+    color: #070101;
+}
+.form-select {
+  background-color:#99B7E6;
+  /* Màu nền của thanh danh mục */
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+/* Banner */
+#banner {
+    background: url('imgs/nen.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: left;
+    width: 100%;
+    height: 500px;
+}
+
+.box-left {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#banner button:hover {
+    background-color: #0056b3;
+}
+
+/* Sản phẩm */
+#wp-products {
+    text-align: center;
+}
+
+#list-products .item {
+    width: calc(25% - 20px);
+    margin: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#list-products .item:hover {
+    transform: translateY(-5px);
+}
+
+#list-products .item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Thanh toán */
+.payment-column {
+    background-color: #f8f9fa;
+    padding: 15px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.final-price {
+    text-align: right;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.buy-button {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-social img {
+    margin: 0 10px;
+}
+
+.logo {
+    max-height: 70px;
+    margin-right: 15px;
+}
+
+.shop-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+                  /* đăng nhập */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qr-login img {
+    width: 100%; /* Đảm bảo hình ảnh QR không vượt quá chiều rộng của phần tử chứa nó */
+    max-width: 50px; /* Điều chỉnh kích thước tối đa của mã QR */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+       /* quản lí đoen hàng*/
+.sidebar {
+    height: 80h;
+    width: 250px;
+    position: fixed;
+    top: 150px;
+    left: 20;
+    background-color: #234c74;
+    color: white;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #2a4398;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.navbar {
+    background-color: #343a40;
+    color: white;
+}

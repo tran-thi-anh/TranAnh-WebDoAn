@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container position-relative">
+    <!-- Đăng nhập -->
+    <div class="card bg-primary-subtle text-primary-emphasis p-4 mt-5 mx-auto" style="max-width: 400px;">
+        <h3 class="text-left d-flex justify-content-between align-items-center">Đăng nhập
+        <a href="dangnhapvoiqr.html" class="btn btn-dark w-48 qr-login">Đăng nhập với</a>
+        <div class="qr-login">
+            <a href="dangnhapvoiqr.html"><img src="imgs/QR.jpg" alt="QR Code"> </a>
+         </div>
+        </h3>
+        <form>
+            <div class="mb-3">
+                <label for="loginInput" class="form-label">Email/Số điện thoại/Tên đăng nhập</label>
+                <input type="text" class="form-control" id="loginInput" placeholder="*Nhập Email/Số điện thoại/Tên đăng nhập">
+            </div>
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="*Nhập mật khẩu">
+            </div>
+            <a href="trangchu.html" class="btn btn-primary w-100 text-decoration-none text-white">Đăng nhập</a>
+            <div class="d-flex justify-content-between mt-3">
+                <a href="quenmatkhau.html" class="text-decoration-none">Quên mật khẩu</a>
+                <a href="dangnhapvoiSMS.html" class="text-decoration-none">Đăng nhập với SMS</a>
+            </div>
+        </form>
+        <div class="text-center my-3">HOẶC</div>
+        <div class="d-flex justify-content-between">
+            <a href="dangnhapvoifb.html" class="btn btn-facebook w-48">Facebook</a>
+            <a href="dangnhapvoigg.html" class="btn btn-google w-48">Google</a>
+        </div>
+        <p class="text-center mt-3">Bạn mới biết đến chúng tôi? <a href="dangki.html" style="text-decoration: none">Đăng ký</a></p>
+    </div>
+
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

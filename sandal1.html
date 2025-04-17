@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sandal1</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header text-dark py-3">
+        <header class="header bg-primary-subtle text-dark py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="trangchu.html" class="d-flex align-items-center text-decoration-none">
+                    <img src="imgs/logo.jpg" alt="Logo 3T Shoes" height="100" width="100" class="me-2 rounded-circle" title="Logo">
+                </a>
+
+                <!-- Thanh tìm kiếm -->
+                <div class="d-flex flex-grow-1 mx-4">
+                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                    <button class="btn btn-light ms-2"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Các biểu tượng -->
+                <div class="d-flex align-items-center">
+                    <a href="taikhoancuatoi.html" class="text-white mx-2" title="Tài khoản"><i class="fas fa-user fa-lg"></i></a>
+                    <a href="tranggiohang.html" class="text-white mx-2" title="Giỏ hàng"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                    <a href="blog.html" class="text-white mx-2" title="Blog"><i class="fas fa-blog fa-lg"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="category-bar text-dark py-1">
+            <div class="container">
+                <ul class="category-list d-flex justify-content-center mb-2 mt-2">
+                    <li class="px-3"><a href="trangchu.html" class="text-decoration-none">Trang chủ</a></li>
+                    <li class="px-3"><a href="nike.html" class="text-decoration-none">Giày Nike</a></li>
+                    <li class="px-3"><a href="sandal.html" class="text-decoration-none">Dép Sandal</a></li>
+                    <li class="px-3"><a href="taobao.html" class="text-decoration-none">Giày Taobao</a></li>
+                    <li class="px-3"><a href="lienhe.html" class="text-decoration-none">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img id="main-image" src="imgs/sandal1.jpg" alt="Sản phẩm" class="img-fluid">
+                    <div class="d-flex mt-3">
+                        <a href="imgs/sandal12.jpg">
+                            <img src="imgs/sandal12.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                        <a href="imgs/sandal13.jpg">
+                            <img src="imgs/sandal13.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                        <a href="imgs/sandal14.jpg">
+                            <img src="imgs/sandal14.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                        <a href="imgs/sandal15.jpg">
+                            <img src="imgs/sandal15.jpg" alt="Ảnh nhỏ" class="me-2" width="80">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Sandal nữ Dép quai dày một dây chéo</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="text-warning fs-5 me-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                        <span>(758 đánh giá)</span>
+                    </div>
+                    <p class="mt-3 fs-4 text-danger">89.000đ <span class="text-muted fs-6 text-decoration-line-through">115.000đ</span></p>
+                    <form action="thanhtoan.html" method="GET">
+                        <!-- Thông tin sản phẩm ẩn -->
+                        <input type="hidden" name="product_name" value="Sandal nữ Dép quai dày một dây chéo">
+                        <input type="hidden" name="product_price" value="89000">
+                        <input type="hidden" name="product_image" value="imgs/sandal1.jpg">
+                        <!-- Chọn màu sắc -->
+                        <p>Màu sắc:</p>
+                        <label>
+                        <input type="radio" name="color" value="Trắng" required> Trắng
+                    </label>
+                        <label>
+                        <input type="radio" name="color" value="Đen"> Đen
+                    </label>
+
+                        <!-- Chọn size -->
+                        <p class="mt-3">Size:</p>
+                        <label>
+                        <input type="radio" name="size" value="35" required> 35
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="36"> 36
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="37"> 37
+                    </label>
+                        <label>
+                        <input type="radio" name="size" value="38"> 38
+                    </label>
+
+                        <!-- Nhập số lượng -->
+                        <div class="mt-3">
+                            <label for="quantity">Số lượng:</label>
+                            <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        </div>
+
+                        <!-- Nút Mua hàng và Thêm vào giỏ hàng -->
+                        <div class="mt-4">
+
+                            <button type="submit" class="btn btn-primary" formaction="tranggiohang.html">Thêm vào giỏ hàng</button>
+                            <button type="submit" class="btn btn-success me-2" formaction="thanhtoan.html">Mua hàng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h5>Chi tiết sản phẩm</h5>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th>Danh mục</th>
+                            <td>3T SHOES > Giày Nike</td>
+                        </tr>
+                        <tr>
+                            <th>Số lượng hàng khuyến mãi</th>
+                            <td>567</td>
+                        </tr>
+                        <tr>
+                            <th>Thương hiệu</th>
+                            <td>Nike</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5>Mô tả sản phẩm</h5>
+                <p><strong>Quy trình duy nhất:</strong> Giày đúc phun</p>
+                <p><strong>Chất liệu bên trong:</strong> PVC</p>
+                <p><strong>Chiều cao trên:</strong> Đỉnh thấp</p>
+                <p><strong>Phong cách trở lại:</strong> Trở lại trống</p>
+                <p><strong>Phong cách bên:</strong> Bên trống</p>
+                <p><strong>Tổng trọng lượng:</strong> 0,3 kg</p>
+                <p><strong>Khối lượng đóng gói:</strong> 0,35 kg</p>
+                <p><strong>Mùa năm niêm yết:</strong> Mùa hè năm 2024</p>
+                <p><strong>Thời gian vận chuyển mới nhất:</strong> 3 ngày</p>
+                <p><strong>Màu:</strong> Trắng, Đen</p>
+                <p><strong>Kích thước:</strong></p>
+                <ul>
+                    <li>36-37 [Một kích thước nhỏ hơn]</li>
+                    <li>38-39 [Một kích thước nhỏ hơn]</li>
+                    <li>40-41 [Một kích thước nhỏ hơn]</li>
+                </ul>
+                <p><strong>Nguồn cung cấp đặc biệt xuất khẩu xuyên biên giới:</strong> Không</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-primary-subtle py-4 mt-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-links mt-3">
+                        <h5>Về chúng tôi</h5>
+                        <ul>
+                            <li><a href="gioithieu.html" class="text-decoration-none">Giới thiệu</a></li>
+                            <li><a href="dieukhoan.html" class="text-decoration-none">Điều khoản sử dụng</a></li>
+                            <li><a href="lienhe.html" class="text-decoration-none">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-links mt-3">
+                        <h5>Khách hàng</h5>
+                        <ul>
+                            <li><a href="chinhsachbaomat.html" class="text-decoration-none">Chính sách bảo mật</a></li>
+                            <li><a href="chinhsachdoitra.html" class="text-decoration-none">Chính sách đổi trả</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-4 footer-links mt-3">
+                        <h5>Đăng ký để nhận ưu đãi từ 3T SHOES!</h5>
+                        <form class="d-flex justify-content-center">
+                            <input type="text" class="form-control w-60 me-2" placeholder="*Nhập số điện thoại của bạn">
+                            <button class="border border-none"><a href="taikhoancuatoi.html" class="btn btn-primary">Đăng ký</a></button>
+                        </form>
+                        <div class="mt-3">
+                            <p>Kết nối với chúng tôi:</p>
+                            <div class="footer-social">
+                                <a href="https://bom.so/iQgNYI"><img src="imgs/facebook.jpg" class="rounded-4" alt="Facebook" width="30"></a>
+                                <a href="https://bom.so/79wB7E"><img src="imgs/tiktok.jpg" class="rounded-4" alt="Instagram" width="30"></a>
+                                <a href="https://bom.so/uO1L9i"><img src="imgs/instagram.jpg" class="rounded-4" alt="TikTok" width="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script>
+            // Lắng nghe sự kiện khi người dùng nhấn nút "Thêm vào giỏ hàng"
+            document.querySelector('.btn-primary').addEventListener('click', function(event) {
+                event.preventDefault(); // Ngăn không cho form gửi đi ngay lập tức
+
+                // Lấy thông tin sản phẩm từ form
+                const productName = document.querySelector('input[name="product_name"]').value;
+                const productPrice = parseInt(document.querySelector('input[name="product_price"]').value);
+                const productImage = document.querySelector('input[name="product_image"]').value;
+                const productColor = document.querySelector('input[name="color"]:checked').value;
+                const productSize = document.querySelector('input[name="size"]:checked').value;
+                const productQuantity = parseInt(document.getElementById('quantity').value);
+
+                // Tạo đối tượng sản phẩm
+                const product = {
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    color: productColor,
+                    size: productSize,
+                    quantity: productQuantity
+                };
+
+                // Lấy giỏ hàng hiện tại từ localStorage
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                // Kiểm tra nếu sản phẩm đã có trong giỏ hàng, thì chỉ cập nhật số lượng
+                const existingProductIndex = cart.findIndex(item => item.name === product.name && item.color === product.color && item.size === product.size);
+                if (existingProductIndex !== -1) {
+                    cart[existingProductIndex].quantity += productQuantity; // Cộng thêm số lượng
+                } else {
+                    cart.push(product); // Nếu chưa có, thêm sản phẩm mới vào giỏ
+                }
+
+                // Lưu lại giỏ hàng vào localStorage
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                // Chuyển hướng đến trang giỏ hàng (hoặc có thể không chuyển hướng và chỉ cập nhật giao diện giỏ hàng)
+                window.location.href = "tranggiohang.html"; // Nếu muốn chuyển đến trang giỏ hàng
+            });
+        </script>
+
+</body>
+
+</html>
